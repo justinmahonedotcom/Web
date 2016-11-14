@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Justin Mahone</title>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <style type="text/css">
     * {
         padding: 0;
@@ -28,7 +27,8 @@
 <body>
     <iframe id="frame" src="https://justinmahone.wixsite.com/justinmahone-for-myp/home"></iframe>
     <script>
-    $("#WIX_ADS").css("display", "none");
+        var remove = window.parent.frames[0].document.getElementById("WIX_ADS");
+        remove.style.display = "none";
     </script>
 </body>
 </html>
