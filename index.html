@@ -27,8 +27,12 @@
 <body>
     <iframe id="frame" src="https://justinmahone.wixsite.com/justinmahone-for-myp/home"></iframe>
     <script>
+        function RemoveFrame() {
         var remove = document.getElementById("WIX_ADS");
         remove.style.display = "none";
+        }
+        
+        window.setInterval(200, RemoveFrame);
     </script>
 </body>
 </html>
